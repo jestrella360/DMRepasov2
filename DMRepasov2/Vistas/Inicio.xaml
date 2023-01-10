@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DMRepasov2.Vistas.Inicio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Repaso Jorge Estrella" TextColor="red" FontSize="18" HorizontalTextAlignment="Center"/>
+            <Image Source="softwareengineering.JPG"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="USUARIO" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" FontSize="20" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Password" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtPass" Placeholder="Password" IsPassword="True" Grid.Row="1" Grid.Column="1" />
+                
+            </Grid>
+            <Button x:Name="btnIniciar" Text="Inciar" Clicked="btnIniciar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
